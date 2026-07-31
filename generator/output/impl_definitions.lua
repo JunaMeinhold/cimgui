@@ -1532,12 +1532,12 @@ local t={
         [3]={
           name="pipeline",
           type="VkPipeline"}},
-      argsoriginal="(ImDrawData* draw_data,VkCommandBuffer command_buffer,VkPipeline pipeline=0ULL)",
+      argsoriginal="(ImDrawData* draw_data,VkCommandBuffer command_buffer,VkPipeline pipeline=((void*)0))",
       call_args="(draw_data,command_buffer,pipeline)",
       call_args_old="(draw_data,command_buffer,pipeline)",
       cimguiname="ImGui_ImplVulkan_RenderDrawData",
       defaults={
-        pipeline="0ULL"},
+        pipeline="NULL"},
       funcname="ImGui_ImplVulkan_RenderDrawData",
       location="imgui_impl_vulkan:153",
       ov_cimguiname="ImGui_ImplVulkan_RenderDrawData",
